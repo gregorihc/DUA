@@ -1,0 +1,493 @@
+{
+	"Declaration": {
+		"AcceptanceDateTime": {
+			"DateTimeString": "2023-08-17T14:30:00Z"
+		},
+		"Function": {
+			"$": "47"
+		},
+		"ID": {
+			"$": "DECL-2023-12345"
+		},
+		"issueLocationID": {
+			"$": "LOC-123"
+		},
+		"GoodsItemQuantity": [
+			{
+				"$": 0.1,
+				"@unitCode": "KGM"
+			},
+			{
+				"$": 0.2,
+				"@unitCode": "KGM"
+			}
+		],
+		"DeclarationOfficeID": {
+			"$": "001"
+		},
+		"TotalGrossMassMeasure": {
+			"$": 1500.5,
+			"@unitCode": "KGM"
+		},
+		"TotalPackageQuantity": {
+			"$": 10,
+			"@unitCode": "NAR"
+		},
+		"SplitConsignmentQuantity": {
+			"$": 0.5,
+			"@unitCode": "KGM"
+		},
+		"AdditionalDocument": {
+			"ID": {
+				"$": "DOC-123"
+			},
+			"TypeCode": {
+				"$": "106"
+			}
+		},
+		"AdditionalInformation": {
+			"StatementTypeCode": {
+				"$": "Additional"
+			}
+		},
+		"BorderTransportMeans": {
+			"ID": {
+				"$": "VEH-789"
+			},
+			"RegistrationNationalityCode": {
+				"$": "US"
+			},
+			"ModeCode": {
+				"$": "07"
+			},
+			"DepartureDateTime": {
+				"DateTimeString": "2023-08-17T15:00:00Z"
+			},
+			"DischargeCompletedDateTime": {
+				"DateTimeString": "2023-08-18T08:45:00Z"
+			},
+			"Carrier": {
+				"ID": {
+					"$": "CARR-001"
+				},
+				"Name": {
+					"$": "Air Cargo Express",
+					"@languageID": "en"
+				}
+			},
+			"TransportEquipment": [
+				{
+					"SequenceNumeric": 1,
+					"CharacteristicCode": {
+						"$": "06"
+					},
+					"ID": {
+						"$": "CONT-789"
+					},
+					"Seal": {
+						"ID": {
+							"$": "SEAL-123"
+						}
+					}
+				},
+				{
+					"SequenceNumeric": 2,
+					"CharacteristicCode": {
+						"$": "07"
+					},
+					"ID": {
+						"$": "CONT-790"
+					},
+					"Seal": {
+						"ID": {
+							"$": "SEAL-124"
+						}
+					}
+				}
+			]
+		},
+		"Declarant": {
+			"Name": {
+				"$": "John Doe",
+				"@languageID": "en"
+			},
+			"ID": {
+				"$": "JD-123",
+				"@schemeID": "04"
+			},
+			"RoleCode": {
+				"$": "DFW"
+			},
+			"Address": {
+				"Line": {
+					"$": "123 Main St",
+					"@languageID": "en"
+				},
+				"CityName": {
+					"$": "Anytown",
+					"@languageID": "en"
+				}
+			}
+		},
+		"ExitOffice": {
+			"ID": {
+				"$": "004"
+			}
+		},
+		"Exporter": {
+			"Name": {
+				"$": "Global Exports Ltd.",
+				"@languageID": "en"
+			},
+			"ID": {
+				"$": "EXP-456",
+				"@schemeID": "04"
+			},
+			"RoleCode": {
+				"$": "DFW"
+			},
+			"Address": {
+				"CityName": {
+					"$": "Exportville",
+					"@languageID": "en"
+				},
+				"CountryCode": {
+					"$": "US"
+				},
+				"Line": {
+					"$": "456 Export Rd",
+					"@languageID": "en"
+				}
+			}
+		},
+		"GoodsShipment": {
+			"SequenceNumeric": 1,
+			"AdditionalDocument": [
+				{
+					"ExpirationDateTime": {
+						"DateTimeString": "2023-09-01T23:59:59Z"
+					},
+					"FunctionalReferenceID": {
+						"$": "FUNC-DOC-001"
+					},
+					"ID": {
+						"$": "DOC-001"
+					},
+					"IssueDateTime": {
+						"DateTimeString": "2023-08-15T10:30:00Z"
+					},
+					"IssuerName": {
+						"$": "Customs Authority",
+						"@languageID": "en"
+					},
+					"Name": {
+						"$": "Customs Declaration",
+						"@languageID": "en"
+					},
+					"TypeCode": {
+						"$": "105"
+					}
+				},
+				{
+					"ExpirationDateTime": {
+						"DateTimeString": "2023-09-02T23:59:59Z"
+					},
+					"FunctionalReferenceID": {
+						"$": "FUNC-DOC-002"
+					},
+					"ID": {
+						"$": "DOC-002"
+					},
+					"IssueDateTime": {
+						"DateTimeString": "2023-08-16T09:45:00Z"
+					},
+					"IssuerName": {
+						"$": "Shipping Company",
+						"@languageID": "en"
+					},
+					"Name": {
+						"$": "Bill of Lading",
+						"@languageID": "en"
+					},
+					"TypeCode": {
+						"$": "118"
+					}
+				}
+			],
+			"AdditionalInformation": [
+				{
+					"Content": {
+						"$": "This shipment contains perishable goods.",
+						"@languageID": "en"
+					},
+					"StatementTypeCode": {
+						"$": "Information"
+					}
+				},
+				{
+					"Content": {
+						"$": "Goods are for temporary exhibition purposes only.",
+						"@languageID": "en"
+					},
+					"StatementTypeCode": {
+						"$": "Information"
+					}
+				}
+			],
+			"Consignee": [
+				{
+					"Name": {
+						"$": "Jane Smith",
+						"@languageID": "en"
+					},
+					"ID": {
+						"$": "CS-789",
+						"@schemeID": "06"						
+					},
+					"RoleCode": {
+						"$": "DFW"
+					},
+					"Address": {
+						"Line": {
+							"$": "789 Warehouse St",
+							"@languageID": "en"
+						},
+						"CityName": {
+							"$": "Receivingtown",
+							"@languageID": "en"
+						},
+						"CountryCode": {
+							"$": "US"
+						}
+					}
+				},
+				{
+					"Name": {
+						"$": "Carlos García",
+						"@languageID": "es"
+					},
+					"ID": {
+						"$": "CS-790",
+						"@schemeID": "07"
+					},
+					"RoleCode": {
+						"$": "DFW"
+					},
+					"Address": {
+						"Line": {
+							"$": "123 Calle Principal",
+							"@languageID": "es"
+						},
+						"CityName": {
+							"$": "Ciudad Receptora",
+							"@languageID": "es"
+						},
+						"CountryCode": {
+							"$": "ES"
+						}
+					}
+				}
+			],
+			"Control": {
+				"ControlResult": {
+					"ID": {
+						"$": "CTRL-001"
+					}
+				}
+			},
+			"CustomsValuation": [
+				{
+					"FreightChargeAmount": {
+						"$": 150.75,
+						"@currencyID": "USD"
+					},
+					"InsuranceAmount": {
+						"$": 50.25,
+						"@currencyID": "USD"
+					},
+					"ChargeDeduction": [
+						{
+							"ChargesTypeCode": {
+								"$": "Handling"
+							},
+							"OtherChargeDeductionAmount": {
+								"$": 10.5,
+								"@currencyID": "USD"
+							}
+						},
+						{
+							"ChargesTypeCode": {
+								"$": "CustomsFee"
+							},
+							"OtherChargeDeductionAmount": {
+								"$": 5.75,
+								"@currencyID": "USD"
+							}
+						}
+					]
+				},
+				{
+					"FreightChargeAmount": {
+						"$": 120.25,
+						"@currencyID": "USD"
+					},
+					"InsuranceAmount": {
+						"$": 45.50,
+						"@currencyID": "USD"
+					},
+					"ChargeDeduction": [
+						{
+							"ChargesTypeCode": {
+								"$": "Handling"
+							},
+							"OtherChargeDeductionAmount": {
+								"$": 9.0,
+								"@currencyID": "USD"
+							}
+						},
+						{
+							"ChargesTypeCode": {
+								"$": "CustomsFee"
+							},
+							"OtherChargeDeductionAmount": {
+								"$": 4.25,
+								"@currencyID": "USD"
+							}
+						}
+					]
+				}
+			],
+			"GovernmentAgencyGoodsItem": {
+				"SequenceNumeric": 1,
+				"Commodity": {
+					"Description": {
+						"$": "Electronics Components",
+						"@languageID": "en"
+					},
+					"Classification": {
+						"ID": {
+							"$": "123456"
+						},
+						"IdentificationTypeCode": {
+							"$": "HSCode"
+						}
+					},
+					"Destination": {
+						"CountryCode": {
+							"$": "US"
+						}
+					},
+					"Itinerary": {
+						"RoutingCountryCode": {
+							"$": "US"
+						}
+					}
+				},
+				"GoodsMeasure": {
+					"GrossMassMeasure": {
+						"$": 120.5,
+						"@unitCode": "KGM"
+					},
+					"NetNetWeightMeasure": {
+						"$": 110.2,
+						"@unitCode": "KGM"
+					},
+					"TariffQuantity": {
+						"$": 250,
+						"@unitCode": "KGM"
+					}
+				},
+				"Origin": {
+					"CountryCode": {
+						"$": "CN"
+					},
+					"RegionID": {
+						"$": "30105"
+					}
+				},
+				"Packaging": {
+					"MarksNumbersID": {
+						"$": "PKG-123"
+					},
+					"TypeCode": {
+						"$": "1W"
+					},
+					"QuantityQuantity": {
+						"$": 5,
+						"@unitCode": "NAR"
+					}
+				}
+			},
+			"Invoice": [
+				{
+					"AmountAmount": {
+						"$": 500.25,
+						"@currencyID": "USD"
+					},
+					"TypeCode": {
+						"$": "Goods"
+					}
+				},
+				{
+					"AmountAmount": {
+						"$": 300.50,
+						"@currencyID": "USD"
+					},
+					"TypeCode": {
+						"$": "Services"
+					}
+				}
+			],
+			"Supplier": {
+				"Name": {
+					"$": "Tech Supplies Co.",
+					"@languageID": "en"
+				},
+				"ID": {
+					"$": "SUP-789",
+					"@schemeID": "04"
+				},
+				"Address": {
+					"CityName": {
+						"$": "Supplytown",
+						"@languageID": "en"
+					},
+					"CountryCode": {
+						"$": "US"
+					},
+					"Line": {
+						"$": "789 Supplier St",
+						"@languageID": "en"
+					}
+				}
+			},
+			"Warehouse": [
+				{
+					"Name": {
+						"$": "Main Warehouse",
+						"@languageID": "en"
+					},
+					"ID": {
+						"$": "WRH-001"
+					},
+					"TypeCode": {
+						"$": "Distribution"
+					}
+				}
+			]
+		},
+		"GovernmentProcedure": {
+			"CurrentCode": {
+				"$": "EXP-123"
+			}
+		},
+		"LoadingLocation": {
+			"ID": {
+				"$": "PORT-456"
+			},
+			"LoadingDateTime": {
+				"DateTimeString": "2023-08-17T16:30:00Z"
+			}
+		}
+	}
+}
